@@ -1,0 +1,99 @@
+FINAL MODELS AND SCORES FOR MACHINE LEARNING ASSIGNMENTS 1 - 3
+JON THIRKIELD, MAY 9 2016
+
+AMAZON CLASSIFIER
+	SPLIT INTO TWO SETS
+	CRITERIA (Y VARIABLE): HELPFUL RATIO OF > 0.65 (INCLUDING 1/1 HELPFUL SCORE)
+		TRIED:
+			0.65 with more than three ratings
+			Three ratings are more without helpful ratio
+			prior criteria of 4 or more
+
+	SET 1: HELPFUL SCORE OF 5
+
+		HIGHEST TRUE POSTIVE -- NAIVE BAYES: 0.717874873145
+		Error rate on training set: 
+		0.00269712601326
+		Accuracy rate on training set: 
+		0.997302873987
+		True positive rate on training tet:
+		0.995544711997
+		**************
+		Error rate on test set: 
+		0.302130976535
+		Accuracy rate on test set: 
+		0.697869023465
+		True positive rate on test set
+		0.717874873145
+		True negative rate on test set
+		0.683504667376
+
+		PREFERRED MODEL -- LINEAR
+		Error rate on training set: 
+		0.00329648734955
+		Accuracy rate on training set: 
+		0.99670351265
+		True positive rate on training tet:
+		0.996016171045
+		**************
+		Error rate on test set: 
+		0.302257069821
+		Accuracy rate on test set: 
+		0.697742930179
+		True positive rate on test set
+		0.673907677117
+		True negative rate on test set
+		0.71485682776
+	
+	SET 2: HELPFUL SCORE UNDER 5
+	
+		HIGHEST TRUE POSTIVE -- PERCEPTRON : 0.635069961298
+			Error rate on training set: 
+			0.00362769576073
+			Accuracy rate on training set: 
+			0.996372304239
+			True positive rate on training tet:
+			0.997269624573
+			**************
+			Error rate on test set: 
+			0.293216141604
+			Accuracy rate on test set: 
+			0.706783858396
+			True positive rate on test set
+			0.635069961298
+			True negative rate on test set
+			0.743878776679
+			
+		PREFERRED MODEL -- LINEAR
+			Error rate on training set: 
+			0.00385388302639
+			Accuracy rate on training set: 
+			0.996146116974
+			True positive rate on training tet:
+			0.994160030338
+			**************
+			Error rate on test set: 
+			0.293804806755
+			Accuracy rate on test set: 
+			0.706195193245
+			True positive rate on test set
+			0.626436439416
+			True negative rate on test set
+			0.747451415196
+
+
+SALARY REGRESSION
+
+		BEST MODEL: LASSO REGRESSION AT 16 ALPHA
+					INPUTATION METHOD: "MOST FREQUENT"
+					
+			* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 					
+			Mean Squared Error, training data: 80507804
+			Mean Squared Error, test data: 90215343
+			* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+			Variance score, training data: 0.75
+			Variance score, test data: 0.76
+
+CLUSTERING
+		HAPPIEST CLUSTER NUMBER: 240!
+		
